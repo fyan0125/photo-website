@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  button {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    background: #58c9b9;
+    color: white;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+      background: rgb(115, 148, 148);
+    }
+  }
+}
+
+.about {
+  padding: 3rem 10rem;
+  text-align: center;
+  a {
+    color: #58c9b9;
+  }
+}
+
+@import "./_nav.scss";
+@import "./search";
+@import "./_footer.scss";
+@import "./_picture.scss";
